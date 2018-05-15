@@ -1,0 +1,105 @@
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+.row > h1{
+  text-align: center;
+  padding: 2%;
+}
+
+.row>div{
+  display: inline-block;
+  margin: 1% 1% 1% 1%;
+}
+
+.parrafo{
+  margin: 10% 5% 15% 5%;
+  justify-content: left;
+  color:white;
+}
+
+.subtitulo{
+  float: right;
+  width: 120px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;  
+}
+
+.subtitulo > p{
+  text-align: center;
+  margin: 1%;
+}
+
+section{
+  border: 2px solid black;
+  padding: 0% 0% 0% 0%;
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  
+  .col-sd-12{
+    width: 98%;
+    height: 98%;
+    background-color: #70524a;
+  }
+  div.col-sd-12:nth-child(1) div.subtitulo{
+  background-color: #e5d198;/*amarillo*/
+  }
+  div.col-sd-12:nth-child(2) div.subtitulo{
+  background-color: #d59898;/*Rosado*/
+  }
+  div.col-sd-12:nth-child(3) div.subtitulo{
+  background-color: #c14543;/*Rojo*/
+  }
+  .parrafo{
+    font-family: monospace;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .col-md-6 {
+    width: 47.7%;
+    background-color: #4b4f60;
+  }
+
+  .col-md-12 {
+    width: 98%;
+    background-color: #4b4f60;
+  }
+  div.col-md-6:nth-child(1) div.subtitulo{
+  background-color: #c14543;/*Rojo*/
+  }
+  div.col-md-6:nth-child(2) div.subtitulo{
+  background-color: #e5d198;/*amarillo*/
+  }
+  div.col-md-12:nth-child(3) div.subtitulo{
+  background-color: #d59898;/*Rosado*/
+  }
+  .parrafo{
+    font-family: sans-serif;
+  }
+
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  
+  .col-lg-4{
+    width: 31%;
+    background-color: #4a5b43;
+  }
+  div.col-lg-4:nth-child(1) div.subtitulo{
+  background-color: #d59898;
+  }
+  div.col-lg-4:nth-child(2) div.subtitulo{
+    background-color: #c14543;
+  }
+  div.col-lg-4:nth-child(3) div.subtitulo{
+    background-color: #e5d198;
+  }
+
+}
+
+
